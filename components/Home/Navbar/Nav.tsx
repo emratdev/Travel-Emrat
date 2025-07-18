@@ -4,7 +4,7 @@ import { navLinks } from '@/constant/constant'
 import React, { useEffect } from 'react'
 import { TbAirBalloon } from 'react-icons/tb'
 import Link from "next/link";
-import { HiBars3BottomLeft, HiBars3BottomRight } from 'react-icons/hi2';
+import { HiBars3BottomRight } from 'react-icons/hi2';
 
 type Props = {
     openNav: () => void;
