@@ -3,10 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   basePath:
     process.env.NODE_ENV === "production" ? process.env.NEXT_APP_BASE_URL : "",
-  assetPrefix:
-    process.env.NODE_ENV === "production"
-      ? process.env.NEXT_APP_ASSET_PREFIX
-      : "",
   output: "standalone",
  reactStrictMode: true,
   eslint: {

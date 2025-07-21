@@ -1,50 +1,70 @@
-// Static Data
+import d1 from "@public/images/d1.jpg";
+import d2 from "@public/images/d2.jpg";
+import d3 from "@public/images/d3.jpg";
+import d4 from "@public/images/d4.jpg";
+import d5 from "@public/images/d5.jpg";
+import d6 from "@public/images/d6.jpg";
+import d7 from "@public/images/d7.jpg";
+import d8 from "@public/images/d8.jpg";
+import h1 from "@public/images/h1.jpg";
+import h2 from "@public/images/h2.jpg";
+import h3 from "@public/images/h3.jpg"; 
+import h4 from "@public/images/h4.jpg";
+import n1 from "@public/images/n1.jpg";
+import n2 from "@public/images/n2.jpg";
+import n3 from "@public/images/n3.jpg";
+import n4 from "@public/images/n4.jpg";
+import u1 from "@public/images/u1.jpg";
+import u2 from "@public/images/u2.jpg";
+import u3 from "@public/images/u3.jpg";
+
+
 export const destinationData = [
   {
     id: 1,
-    image: "/images/d1.jpg",
+    image: d1,
     country: "France",
     travelers: "150,000",
   },
   {
     id: 2,
-    image: "/images/d2.jpg",
+    image: d2,
     country: "USA",
     travelers: "250,000",
   },
   {
     id: 3,
-    image: "/images/d3.jpg",
+    image: d3,
     country: "Italy",
     travelers: "180,000",
   },
   {
     id: 4,
-    image: "/images/d4.jpg",
+    image: d4,
     country: "Japan",
     travelers: "200,000",
   },
   {
     id: 5,
-    image: "/images/d5.jpg",
+    image: d5,
     country: "Australia",
     travelers: "120,000",
   },
   {
     id: 6,
-    image: "/images/d6.jpg",
+    image: d6,
     country: "Canada",
     travelers: "175,000",
   },
   {
     id: 7,
-    image: "/images/d7.jpg",
+    image: d7,
     country: "Germany",
     travelers: "160,000",
   },
   {
     id: 8,
-    image: "/images/d8.jpg",
+    image: d8,
     country: "Brazil",
     travelers: "140,000",
   },
@@ -53,7 +73,7 @@ export const destinationData = [
 export const hotelsData = [
   {
     id: 1,
-    image: "/images/h1.jpg",
+    image: h1,
     name: "The Grand London Resort and Spa",
     location: "Westminster, London",
     rating: 4.6,
@@ -62,7 +82,7 @@ export const hotelsData = [
   },
   {
     id: 2,
-    image: "/images/h2.jpg",
+    image: h2,
     name: "Barcelona City Suites Deluxe Hotel",
     location: "Ciutat Vella, Barcelona",
     rating: 4.7,
@@ -71,7 +91,7 @@ export const hotelsData = [
   },
   {
     id: 3,
-    image: "/images/h3.jpg",
+    image: h3,
     name: "Times Square Premium Stay Hotel",
     location: "Manhattan, New York",
     rating: 4.9,
@@ -80,7 +100,7 @@ export const hotelsData = [
   },
   {
     id: 4,
-    image: "/images/h4.jpg",
+    image: h4,
     name: "Hilton Roma Luxury Hotel Palace",
     location: "Vaticano Prati, Rome",
     rating: 4.5,
@@ -92,7 +112,7 @@ export const hotelsData = [
 export const toursData = [
   {
     id: 1,
-    image: "/images/t1.jpg",
+    image: n1,
     title: "Historic Wonders of Stonehenge & Oxford Tour",
     location: "Wiltshire, England",
     time: "12+ hours",
@@ -103,7 +123,7 @@ export const toursData = [
   },
   {
     id: 2,
-    image: "/images/t2.jpg",
+    image: n2,
     title: "Barcelona Gothic Quarter Walking Tour",
     location: "Ciutat Vella, Barcelona",
     time: "3+ hours",
@@ -114,7 +134,7 @@ export const toursData = [
   },
   {
     id: 3,
-    image: "/images/t3.jpg",
+    image: n3,
     title: "Thames Luxury Boat Cruise with Dinner",
     location: "London, United Kingdom",
     time: "2–3 hours",
@@ -125,7 +145,7 @@ export const toursData = [
   },
   {
     id: 4,
-    image: "/images/t4.jpg",
+    image: n4,
     title: "Edinburgh Haunted History Walking Tour",
     location: "Edinburgh, Scotland",
     time: "2+ hours",
@@ -142,55 +162,55 @@ export const reviewData = [
     name: "John Doe",
     review:
       "The service exceeded my expectations. The team was professional, and I couldn't be happier with the results. Highly recommended to everyone!",
-    image: "/images/u1.jpg",
+    image: u1,
   },
   {
     id: 2,
     name: "Jane Smith",
     review:
       "I am thoroughly impressed with the attention to detail and quality. They truly understand customer needs and deliver outstanding results. Wonderful experience!",
-    image: "/images/u2.jpg",
+    image: u2,
   },
   {
     id: 3,
     name: "Michael Brown",
     review:
       "Exceptional quality and fantastic customer service! The project was delivered on time and exactly as I wanted. I will definitely use their services again.",
-    image: "/images/u3.jpg",
+    image: u3,
   },
   {
     id: 4,
     name: "Emily Davis",
     review:
       "Outstanding results! The team was efficient, and their professionalism was remarkable. Everything was done perfectly. I highly recommend their expertise to everyone.",
-    image: "/images/u1.jpg",
+    image: u1,
   },
   {
     id: 5,
     name: "Chris Wilson",
     review:
       "Amazing service! They exceeded all expectations and delivered a product that I am extremely happy with. The communication throughout the project was excellent.",
-    image: "/images/u2.jpg",
+    image: u2,
   },
   {
     id: 6,
     name: "Sarah Johnson",
     review:
       "Fantastic experience! They listened carefully to my requirements and delivered exactly what I needed. Their attention to detail is truly commendable.",
-    image: "/images/u3.jpg",
+    image: u3,
   },
   {
     id: 7,
     name: "David Lee",
     review:
       "Absolutely incredible service! The team was supportive and responsive, making sure everything was perfect. I will definitely recommend them to my friends.",
-    image: "/images/u1.jpg",
+    image: u1,
   },
   {
     id: 8,
     name: "Sophia White",
     review:
       "Five-star service from start to finish! The dedication and skill of the team made all the difference. Truly an exceptional experience I won’t forget.",
-    image: "/images/u2.jpg",
+    image: u2,
   },
 ];
