@@ -2,7 +2,6 @@
 
 import React from "react";
 import SearchBox from "../../Helper/SearchBox";
-import hero1 from "@/public/images/hero1.mp4";
 
 const Hero = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,19 +14,21 @@ const Hero = () => {
     alert("Form submitted successfully");
 
   }
-  return ( 
+  return (
     <div className="relative w-full h-[120vh] sm:h-[100vh] ">
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70"></div>
       {/* Video Background */}
       <video
-        src={hero1}
+        className="w-full h-full object-cover"
         autoPlay
         muted
         loop
-        preload="metadata"
-        className="w-full h-full object-cover"
-      />
+        playsInline
+      >
+        <source src="/videos/hero1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Text content */}
       <div className="absolute z-[100] w-full h-full top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
@@ -58,7 +59,7 @@ const Hero = () => {
           opacity-10 rotate-12 group-hover:translate-x-40 ease"
                 />
                 <span className="relative font-bold">Search</span>
-              </button> 
+              </button>
             </div>
           </form>
         </div>
