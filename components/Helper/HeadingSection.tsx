@@ -4,6 +4,7 @@ type Props = {
     heading: string;
 }
 
+
 const HeadingSection = ({heading }:Props) => {
   return (
     <div className="w-[80%] mx-auto">
