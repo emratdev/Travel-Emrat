@@ -30,7 +30,7 @@ const DestinationSlider = () => {
     <Carousel className='z-[10]' responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000} keyBoardControl={true}>
       {destinationData.map((data) => {
         return (
-          <div key={data.id} className="m-3]">
+          <div key={data.id} className="mr-[15]">
             <div className="relative h-[400px]">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-25 rounted-lg"></div>

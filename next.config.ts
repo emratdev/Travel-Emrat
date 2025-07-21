@@ -2,10 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   basePath:
-    process.env.NODE_ENV === "production" ? process.env.NEXT_APP_BASE_URL : "",
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_BASE_PATH
+      : "",
   assetPrefix:
     process.env.NODE_ENV === "production"
-      ? process.env.NEXT_APP_ASSET_PREFIX
+      ? process.env.NEXT_PUBLIC_ASSET_PREFIX
       : "",
   output: "standalone",
   reactStrictMode: true,
