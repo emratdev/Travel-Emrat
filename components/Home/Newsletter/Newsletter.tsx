@@ -1,7 +1,17 @@
+'use client';
 import React from 'react'
 import { BsEnvelopePaper } from 'react-icons/bs'
 
 const Newsletter = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+
+    alert("Subscription successful! We'll keep you updated.");
+  }
   return (
     <div className="bg-black pt-16 pb-16 flex items-center justify-center w-full flex-col">
       <BsEnvelopePaper className="w-16 h-16 mt-20 text-white" />
@@ -12,7 +22,8 @@ const Newsletter = () => {
         Sign up and we&apos;ll send the best deals to you
       </p>
       {/* Subscription inputs and buttons */}
-      <div className="w-full">
+      <form className="w-full" onSubmit={handleSubmit}>
+        
         <input
           type="text"
           className="px-6 py-3.5 bg-white mt-8 w-[95%] sm::w-[80%] md:w-[60%] lg:w-[40%] block mx-auto rounded-lg
@@ -20,12 +31,13 @@ const Newsletter = () => {
           placeholder="Email"
         />
         <button
+        type='submit'
           className="px-6 py-3.5 bg-blue-900 text-white hover:bg-blue-950 transition-all duration-200 mt-3 w-[95%] sm::w-[80%] md:w-[60%] lg:w-[40%] block mx-auto rounded-lg
         outline-none"
         >
           Subscribe
         </button>
-      </div>
+      </form>
     </div>
   );
 

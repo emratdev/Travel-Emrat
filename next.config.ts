@@ -1,9 +1,30 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/Travel-Emrat", 
-  assetPrefix: "/Travel-Emrat/",
-  output: "export",
+  basePath:
+    process.env.NODE_ENV === "production" ? process.env.NEXT_APP_BASE_PATH : "",
+  assetPrefix:
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_APP_ASSET_PREFIX
+      : "",
+  output: "standalone",
+  ireactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
+  transpilePackages: ["@t3-oss/env-nextjs", "@t3-oss/env-core"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost:3000",
+      },
+    ],
+  },
 };
-
 export default nextConfig;

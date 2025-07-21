@@ -1,9 +1,20 @@
+"use client";
+
 import React from "react";
 import SearchBox from "../../Helper/SearchBox";
-import Link from "next/link";
 
 const Hero = () => {
-  return (
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+
+    alert("Form submitted successfully");
+
+  }
+  return ( 
     <div className="relative w-full h-[120vh] sm:h-[100vh] ">
       {/* Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70"></div>
@@ -32,14 +43,23 @@ const Hero = () => {
             </p>
           </div>
           {/* SearchBox */}
-          <SearchBox />
-          <Link href="#" className="rounded px-14 md:px-28 mt-4 py-2.5 overflow-hidden group bg-rose-600 relative
+          <form onSubmit={handleSubmit}>
+            <SearchBox />
+            <div className="text-center">
+              <button
+                type="submit"
+                className="rounded px-14 md:px-28 mt-4 py-2.5 overflow-hidden group bg-rose-600 relative
           hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2
-          hover:ring-red-400 transition-all ease-out duration-300">
-          <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white
-          opacity-10 rotate-12 group-hover:translate-x-40 ease"> </span>
-          <span className="relative font-bold">Search</span>
-          </Link>
+          hover:ring-red-400 transition-all ease-out duration-300"
+              >
+                <span
+                  className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white
+          opacity-10 rotate-12 group-hover:translate-x-40 ease"
+                />
+                <span className="relative font-bold">Search</span>
+              </button> 
+            </div>
+          </form>
         </div>
       </div>
     </div>
