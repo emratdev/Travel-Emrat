@@ -2,6 +2,7 @@
 
 import React from "react";
 import SearchBox from "../../Helper/SearchBox";
+import hero1 from "@/public/images/hero1.mp4";
 
 const Hero = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -20,7 +21,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70"></div>
       {/* Video Background */}
       <video
-        src="/images/hero1.mp4"
+        src={hero1}
         autoPlay
         muted
         loop
