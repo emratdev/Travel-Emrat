@@ -7,7 +7,7 @@ import { StaticImageData } from "next/image";
 type Props = {
   hotel: {
     id: number;
-    image: StaticImageData;
+    image: string | StaticImageData;
     name: string;
     location: string;
     rating: number;

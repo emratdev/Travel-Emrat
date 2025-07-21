@@ -1,6 +1,10 @@
 import HeadingSection from '@/components/Helper/HeadingSection'
 import React from 'react'
 import NewsCard from './NewsCard';
+import n1 from '@/public/images/n1.jpg';
+import n2 from '@/public/images/n2.jpg';
+import n3 from '@/public/images/n3.jpg';
+import n4 from '@/public/images/n4.jpg';
 
 const News = () => {
   return (
@@ -13,7 +17,7 @@ const News = () => {
       >
         <div data-aos="fade-left" data-aos-anchor-placement="top-center">
           <NewsCard
-            image="/images/n1.jpg"
+            image={n1}
             title="Top 10 place to visit in Australia"
             date="15 November 2024"
           />
@@ -25,7 +29,7 @@ const News = () => {
           data-aos-delay="100"
         >
           <NewsCard
-            image="/images/n2.jpg"
+            image={n2}
             title="Top 10 place to visit in Pakistan"
             date="25 November 2024"
           />
@@ -37,7 +41,7 @@ const News = () => {
           data-aos-delay="200"
         >
           <NewsCard
-            image="/images/n3.jpg"
+            image={n3}
             title="Top 10 place to visit in Bangladesh"
             date="12 November 2024"
           />
@@ -49,7 +53,7 @@ const News = () => {
           data-aos-delay="4 00"
         >
           <NewsCard
-            image="/images/n4.jpg"
+            image={n4}
             title="Top 10 place to visit in New Zealand"
             date="5 November 2024"
           />

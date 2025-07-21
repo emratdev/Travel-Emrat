@@ -1,6 +1,9 @@
 import HeadingSection from "@/components/Helper/HeadingSection";
 import React from "react";
 import WhyChooseCards from "./WhyChooseCards";
+import c1 from "@/public/images/c1.svg";
+import c2 from "@/public/images/c2.svg";
+import c3 from "@/public/images/c3.svg";
 
 const WhyChoose = () => {
   return (
@@ -10,7 +13,7 @@ const WhyChoose = () => {
       <div className="grid w-[80%] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 items-center mt-15">
         {/* Why choose cards */}
         <div data-aos="fade-up" data-aos-anchor-placement="top-center">
-          <WhyChooseCards image="/images/c1.svg" title="Best Price Guarantee" />
+          <WhyChooseCards image={c1} title="Best Price Guarantee" />
         </div>
 
         <div
@@ -19,7 +22,7 @@ const WhyChoose = () => {
           data-aos-delay="150"
         >
           <WhyChooseCards
-            image="/images/c2.svg"
+            image={c2}
             title="Easy and Quick Booking"
           />
         </div>
@@ -29,7 +32,7 @@ const WhyChoose = () => {
           data-aos-anchor-placement="top-center"
           data-aos-delay="300"
         >
-          <WhyChooseCards image="/images/c3.svg" title="Customer Care 24/7" />
+          <WhyChooseCards image={c3} title="Customer Care 24/7" />
         </div>
       </div>
     </div>
