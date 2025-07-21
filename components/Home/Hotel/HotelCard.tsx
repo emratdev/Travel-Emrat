@@ -1,11 +1,13 @@
 import React from "react";
 import { FaHeart } from "react-icons/fa";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+
 
 type Props = {
   hotel: {
     id: number;
-    image: string;
+    image: StaticImageData;
     name: string;
     location: string;
     rating: number;
