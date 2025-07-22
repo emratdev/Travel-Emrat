@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     process.env.NODE_ENV === "production"
       ? process.env.NEXT_PUBLIC_ASSET_PREFIX
       : "",
-  output: "export",
+  output: "standalone",
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
