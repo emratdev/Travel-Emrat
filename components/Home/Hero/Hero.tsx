@@ -44,7 +44,7 @@ const Hero = () => {
               Lets enjoy the nature
             </h1>
             <p className="md:text-base text-center text-lg text-white font-normal [word-spacing:5px]">
-              Get the best prices on 2,000,000+ properties,worldvide
+              Get the best prices on 2,000,000+ properties, worldwide
             </p>
           </div>
           {/* SearchBox */}
